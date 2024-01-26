@@ -32,11 +32,12 @@ class _HomePageState extends State<HomePage>{
   Widget build(BuildContext context){
     return Scaffold(
       body: _pages[_selectedIndex],
-      appBar: AppBar(
-        title: Container(
-
+      bottomNavigationBar: Container(
+        color: Colors.blueGrey,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20),
           child: GNav(
-
+            backgroundColor: Colors.blueGrey,
             color: Colors.white,
             activeColor: Colors.white,
             tabBackgroundColor: Colors.green,
