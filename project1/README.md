@@ -1,6 +1,6 @@
 # project1
 
-A new Flutter project.
+A new Flutter project for the ETS competition of january 2024
 
 ## Getting Started
 
