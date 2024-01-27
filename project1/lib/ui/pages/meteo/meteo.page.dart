@@ -10,7 +10,7 @@ class MeteoPage extends StatefulWidget {
 class _MeteoPageState extends State<MeteoPage> {
   @override
   Widget build(BuildContext context) {
-     return Scaffold(
+     return const Scaffold(
       body: Center(child: Text("Meteo page")),
     );
   }

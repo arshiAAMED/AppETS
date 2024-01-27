@@ -5,7 +5,6 @@ import 'package:project1/ui/pages/profile/profile.page.dart';
 import 'package:project1/ui/pages/temps/temps.page.dart';
 import 'package:project1/ui/pages/to_do/to_do.page.dart';
 import 'package:project1/ui/pages/transport/transport.page.dart';
-import 'ui/pages/home/home.page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,13 +19,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/' : (context) => HomePage(),
-        '/meteo' : (context) => MeteoPage(),
-        '/parametre' : (context) => ParametrePage(),
-        '/profile' : (context) => ProfilePage(),
-        '/temps' : (context) => TempsPage(),
-        '/to_do' : (context) => ToDoPage(),
-        '/transport' : (context) => TransportPage(),
+        '/' : (context) => const TempsPage(),
+        '/meteo' : (context) => const MeteoPage(),
+        '/parametre' : (context) => const ParametrePage(),
+        '/profile' : (context) => const ProfilePage(),
+        '/temps' : (context) => const TempsPage(),
+        '/to_do' : (context) => const ToDoPage(),
+        '/transport' : (context) => const TransportPage(),
       },
     );
   }
