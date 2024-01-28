@@ -5,7 +5,7 @@ import 'dart:convert';
 
 import 'package:project1/ui/pages/meteo/widgets/top.meteo.temperature.widget.dart';
 class MeteoPage extends StatefulWidget {
-  Color? couleurCardMeteo;
+  LinearGradient? couleurCardMeteo;
   String? city;
   ScrollController? scrollController;
    MeteoPage({super.key, this.city, this.couleurCardMeteo});

@@ -10,14 +10,24 @@ class CardWidget extends StatefulWidget {
 }
 
 class _CardWidgetState extends State<CardWidget> {
-  Color cardColor = Colors.red.shade100;
+  LinearGradient cardColor = LinearGradient(
+      colors: [
+        Colors.red,
+        Colors.orange.shade200
+      ]
+  );
   @override
   Widget build(BuildContext context) {
     return  InkWell(
       onTap: () async {
         // Mise à jour de la couleur
         setState(() {
-          cardColor = Colors.red.shade200;
+          cardColor = LinearGradient(
+              colors: [
+                Colors.white,
+                Colors.red.shade300
+              ]
+          );
         });
 
         // Navigation vers la nouvelle page
@@ -26,16 +36,23 @@ class _CardWidgetState extends State<CardWidget> {
         // Code ici sera exécuté après le retour de la nouvelle page
         // Remettre la couleur par défaut
         setState(() {
-          cardColor = Colors.red.shade100; // Remplacez par votre couleur par défaut
+          cardColor = LinearGradient(
+              colors: [
+                Colors.red,
+                Colors.orange.shade200
+              ]
+          ); // Remplacez par votre couleur par défaut
         });
       },
 
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Card(
-          color: cardColor,
           elevation: 6,
           child: Container(
+              decoration: BoxDecoration(
+                  gradient: cardColor
+              ),
               padding: EdgeInsets.all(10),
               width: double.infinity,
               height: 150,
