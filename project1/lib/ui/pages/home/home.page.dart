@@ -18,22 +18,66 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.red[400],
         title: Text(AppLocalizations.of(context)!.welcome),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         controller: widget.scrollController,
         child: Column(
+
           children: [
-            CardWidget(text: AppLocalizations.of(context)!.weather,path: '/meteo'),
-            CardWidget(text: AppLocalizations.of(context)!.time,path: '/temps'),
-            CardWidget(text: "Transport",path: '/transport'),
-            CardWidget(text: "TO-DO",path: '/to_do',),
+            SizedBox(height:40.0),
+            Text(
+              "Le temps aujourd'hui est...",
+              style: TextStyle(
+                fontSize: 18.0,
+                color: Colors.grey[500],
+              ),
+            ),
+            SizedBox(height:20.0),
+            Container(
+              width:300,
+              height:100,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.red.shade400,
+                        offset: Offset(1.0,19.0),
+                        //blurRadius: 10,
+                        spreadRadius: 2.0
+                    ),
+                    const BoxShadow(
+                      color: Colors.white,
+                      offset: Offset(-4.0,15.0),
+                      //blurRadius: 6,
+                      spreadRadius: 1.0,
+                    )
+                  ]
+              ),
+              child: const Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text('12:00:00 AM/PM', style: TextStyle(fontSize: 20),),
+                    Text('Janvier 27 2024', style: TextStyle(fontSize: 20),),
+                  ]
+              ),
+            ),
+            SizedBox(height:40.0),
             Row(
               children: [
-                Expanded(child: CardWidget(text: AppLocalizations.of(context)!.settings,path: '/parametre',)),
-                Expanded(child: CardWidget(text: AppLocalizations.of(context)!.profile,path: '/profile',)),
+                Expanded(child: CardWidget(text: AppLocalizations.of(context)!.weather,path: '/meteo',img: 'weather-alert.png',)),
+                Expanded(child: CardWidget(text: "Qualité de l'air",path: '/air',img: 'air-quality2.png')),
               ],
             ),
-            SizedBox(height: 20,)
+            CardWidget(text: "Transport",path: '/transport',img: 'bus.png'),
+            CardWidget(text: "TO-DO",path: '/to_do',img: 'checklist.png'),
+            Row(
+              children: [
+                Expanded(child: CardWidget(text: AppLocalizations.of(context)!.settings,path: '/temps',img: 'adjust.png')),
+                Expanded(child: CardWidget(text: AppLocalizations.of(context)!.profile,path: '/profile',img: 'avatar.png')),
+              ],
+            ),
+            SizedBox(height: 20)
           ],
         ),
       ),

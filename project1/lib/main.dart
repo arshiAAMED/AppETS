@@ -33,9 +33,7 @@ class MyApp extends StatelessWidget {
         '/temps' : (context) => TempsPage(),
         '/to_do' : (context) => ToDoPage(),
         '/transport' : (context) => TransportPage(),
-
         '/air': (context) => AirPage(),
-
         '/route' : (context) => RoutePage(),
 
       },
