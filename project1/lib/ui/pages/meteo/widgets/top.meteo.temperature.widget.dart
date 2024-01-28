@@ -18,17 +18,19 @@ class TopTemperatureWidget extends StatelessWidget {
     return  Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("${temperature}°", style: Theme.of(context).textTheme.displayLarge,),
-            SizedBox(height: 15,),
-            Text("${typeTemp}", style: TextStyle(fontSize: 22),),
-            SizedBox(height: 25,),
-            Text(city?? 'Montréal', style: TextStyle(fontSize: 22),),
-            SizedBox(height: 5,),
-            Text("$temperature° /$tempMin °C Feels like $feelsLike°", style: TextStyle(fontSize: 20),),
-          ],
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("${temperature}°", style: Theme.of(context).textTheme.displayLarge,),
+              SizedBox(height: 15,),
+              Text("${typeTemp}", style: TextStyle(fontSize: 22),),
+              SizedBox(height: 25,),
+              Text(city?? 'Montréal', style: TextStyle(fontSize: 22),),
+              SizedBox(height: 5,),
+              Text("$temperature° /$tempMin °C ça se sent comme $feelsLike°", style: TextStyle(fontSize: 20),),
+            ],
+          ),
         ),
         Padding(
           padding: const EdgeInsets.only(right: 20),

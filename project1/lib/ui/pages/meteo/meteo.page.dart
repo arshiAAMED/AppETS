@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:project1/ui/pages/meteo/widgets/card.hourswidget.dart';
 import 'dart:convert';
-import 'package:intl/intl.dart';
+
 import 'package:project1/ui/pages/meteo/widgets/top.meteo.temperature.widget.dart';
 class MeteoPage extends StatefulWidget {
   String? city;
@@ -40,6 +41,23 @@ class _MeteoPageState extends State<MeteoPage> {
         tempMin = (weatherData?[0]['main']['temp_min'] - 273.15).round();
         tempMax = (weatherData?[0]['main']['temp_max'] - 273.15).round();
         typeTemp = (weatherData?[0]['weather'][0]['main']);
+        switch (typeTemp) {
+          case "Clouds":
+            typeTemp = "Nuageux";
+            break;
+          case "Rain":
+            typeTemp = "Pluvieux";
+            break;
+          case "Snow":
+            typeTemp = "Neigeux";
+            break;
+          case "Clear":
+            typeTemp = "Clair";
+            break;
+          default:
+            typeTemp = "Unknown";
+        }
+
         image = 'images/${weatherData?[0]['weather'][0]['main'].toLowerCase()}.png';
         print("$temperature");
         print(weatherData);
@@ -61,48 +79,12 @@ class _MeteoPageState extends State<MeteoPage> {
                    padding: const EdgeInsets.only(left: 20, top: 50),
                    child: Column(
                      children: [
-                       TopTemperatureWidget(city: "Montréal", feelsLike: feelsLike, temperature: temperature,
+                       TopTemperatureWidget(city: "${widget.city?? 'Montréal'}", feelsLike: feelsLike, temperature: temperature,
                          image: image,tempMax: tempMax,tempMin: tempMin,typeTemp: typeTemp,
 
                        ),
                        SizedBox(height: 50,),
-                       SizedBox(
-                  height: 200,
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 10),
-                    child: Card(
-                      elevation: 6,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 10,),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 10),
-                            child: Text("${weatherData?[0]['weather'][0]['main']}, minimum ${tempMin}C.",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold
-                              ),),
-                          ),
-                          SizedBox(height: 10,),
-                          Divider(height: 2,color: Colors.black,),
-                          SizedBox(height: 10,),
-                          Expanded(
-                            child: ListView.builder(
-                              padding: EdgeInsets.only(left: 10,),
-                            controller: widget.scrollController,
-                            itemCount: weatherData?.length,
-                            scrollDirection: Axis.horizontal,
-                                itemBuilder: (context, index) =>
-                                Text("${DateFormat('HH:mm').format(DateTime.fromMicrosecondsSinceEpoch(weatherData?[index]['dt'] * 1000000))}")
-                            
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  )
+                       CardHoursWidget(tempMin: tempMin,weatherData: weatherData,typeTemp: typeTemp,)
                      ],
                    ),
                  ),
