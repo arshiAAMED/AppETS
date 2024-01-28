@@ -4,6 +4,7 @@ import 'package:project1/ui/pages/parametre/parameter.page.dart';
 import 'package:project1/ui/pages/profile/profile.page.dart';
 import 'package:project1/ui/pages/temps/temps.page.dart';
 import 'package:project1/ui/pages/to_do/to_do.page.dart';
+import 'package:project1/ui/pages/transport/mapScreen.dart';
 import 'package:project1/ui/pages/transport/transport.page.dart';
 import 'ui/pages/home/home.page.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/' : (context) => HomePage(),
+        '/' : (context) => MapScreen(),
         '/meteo' : (context) => MeteoPage(),
         '/parametre' : (context) => ParametrePage(),
         '/profile' : (context) => ProfilePage(),
