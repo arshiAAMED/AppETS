@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:project1/main.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:project1/l10n/l10n.dart';
 
 class TempsPage extends StatefulWidget {
   const TempsPage({super.key});
@@ -12,7 +16,8 @@ class _TempsPageState extends State<TempsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Temps et Parametres', style: TextStyle(fontSize: 35),),
+        backgroundColor: Colors.red.shade400,
+        title:  Text(AppLocalizations.of(context)!.timesettings, style: TextStyle(fontSize: 35),),
         centerTitle: true,
       ) ,
       body: Center(
@@ -28,9 +33,9 @@ class _TempsPageState extends State<TempsPage> {
                         boxShadow: [
                           BoxShadow(
                               color: Colors.red.shade400,
-                              offset: Offset(1.0,20.0),
+                              offset: Offset(1.0,19.0),
                               //blurRadius: 10,
-                              spreadRadius: 5.0
+                              spreadRadius: 2.0
                           ),
                           const BoxShadow(
                             color: Colors.white,
@@ -60,83 +65,93 @@ class _TempsPageState extends State<TempsPage> {
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
 
-                                Text('Settings', style: TextStyle(fontSize: 45)),
+                                Text(AppLocalizations.of(context)!.settings, style: TextStyle(fontSize: 45)),
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                      shadowColor: Colors.red.shade400
+                                      backgroundColor: Colors.red.shade400,
+                                      shadowColor: Colors.black,
+                                      side: BorderSide()
                                     ),
-                                  child: const Padding(
-                                    padding: EdgeInsets.fromLTRB(50.0, 1.0, 50.0, 1.0),
-                                    child: Text('Profil'),
+                                  child:  Padding(
+                                    padding: const EdgeInsets.fromLTRB(50.0, 1.0, 50.0, 1.0),
+                                    child: Text(AppLocalizations.of(context)!.profile , style:  TextStyle(color: Colors.white),),
                                   )
                                 ),
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        shadowColor: Colors.red.shade400
-                                    ),
-                                    child: const Padding(
-                                      padding: EdgeInsets.fromLTRB(40.0, 1.0, 40.0, 1.0),
-                                      child: Text('Langage'),
+                                        backgroundColor: Colors.red.shade400,
+                                        shadowColor: Colors.black,
+                                        side: BorderSide()                                    ),
+                                    child:  Padding(
+                                      padding: const EdgeInsets.fromLTRB(40.0, 1.0, 40.0, 1.0),
+                                      child: Text(AppLocalizations.of(context)!.language, style:  TextStyle(color: Colors.white),),
                                     )
                                 ),
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        shadowColor: Colors.red.shade400
+                                        backgroundColor: Colors.red.shade400,
+                                        shadowColor: Colors.black,
+                                        side: BorderSide()
                                     ),
-                                    child: const Padding(
-                                      padding: EdgeInsets.fromLTRB(47.0, 1.0, 47.0, 1.0),
-                                      child: Text('Theme'),
+                                    child:  Padding(
+                                      padding: const EdgeInsets.fromLTRB(47.0, 1.0, 47.0, 1.0),
+                                      child: Text(AppLocalizations.of(context)!.theme , style:  TextStyle(color: Colors.white),),
                                     )
                                 ),
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        shadowColor: Colors.red.shade400
-                                    ),
-                                    child: const Padding(
-                                      padding: EdgeInsets.fromLTRB(40.0, 1.0, 40.0, 1.0),
-                                      child: Text('Favorites'),
+                                        backgroundColor: Colors.red.shade400,
+                                        shadowColor: Colors.black,
+                                        side: BorderSide()                                            ),
+                                    child:  Padding(
+                                      padding: const EdgeInsets.fromLTRB(40.0, 1.0, 40.0, 1.0),
+                                      child: Text(AppLocalizations.of(context)!.favorites , style:  TextStyle(color: Colors.white),),
                                     )
                                 ),
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        shadowColor: Colors.red.shade400
-                                    ),
-                                    child: const Padding(
-                                      padding: EdgeInsets.fromLTRB(40.0, 1.0, 40.0, 1.0),
-                                      child: Text('Location'),
+                                        backgroundColor: Colors.red.shade400,
+                                        shadowColor: Colors.black,
+                                        side: BorderSide()                                            ),
+                                    child:  Padding(
+                                      padding: const EdgeInsets.fromLTRB(40.0, 1.0, 40.0, 1.0),
+                                      child: Text(AppLocalizations.of(context)!.location , style:  TextStyle(color: Colors.white),),
                                     )
                                 ),
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        shadowColor: Colors.red.shade400
-                                    ),
-                                    child: const Padding(
-                                      padding: EdgeInsets.fromLTRB(45.0, 1.0, 45.0, 1.0),
-                                      child: Text('Privacy'),
+                                        backgroundColor: Colors.red.shade400,
+                                        shadowColor: Colors.black,
+                                        side: BorderSide()                                            ),
+                                    child:  Padding(
+                                      padding: const EdgeInsets.fromLTRB(45.0, 1.0, 45.0, 1.0),
+                                      child: Text(AppLocalizations.of(context)!.privacy , style:  TextStyle(color: Colors.white),),
                                     )
                                 ),
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        shadowColor: Colors.red.shade400
-                                    ),
-                                    child: const Padding(
-                                      padding: EdgeInsets.fromLTRB(30.0, 1.0, 30.0, 1.0),
-                                      child: Text('Notifications'),
+                                        backgroundColor: Colors.red.shade400,
+                                        shadowColor: Colors.black,
+                                        side: BorderSide()                                            ),
+                                    child:  Padding(
+                                      padding: const EdgeInsets.fromLTRB(30.0, 1.0, 30.0, 1.0),
+                                      child: Text(AppLocalizations.of(context)!.notifications, style:  TextStyle(color: Colors.white),),
                                     )
                                 ),
                                 ElevatedButton(onPressed: (){
                                 },
                                   style: ElevatedButton.styleFrom(
-                                      shadowColor: Colors.red.shade400
-                                  ),
-                                  child: Text('Widget Customization'),
+                                      backgroundColor: Colors.red.shade400,
+                                      shadowColor: Colors.black,
+                                      side: BorderSide()                                          ),
+                                  child:  Text(AppLocalizations.of(context)!.widgetcustomization , style:  TextStyle(color: Colors.white),),
                                 ),
                               ]
                           )
@@ -146,7 +161,6 @@ class _TempsPageState extends State<TempsPage> {
             )
         ),
       ),
-
     );
   }
 }
