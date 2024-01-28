@@ -1,0 +1,46 @@
+{
+  "timesettings": "Time and Settings",
+  "@timesettings": {
+    "description": "The title of the page"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "The settings"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Goes to the profile page"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Change current language"
+  },
+  "theme": "Theme",
+  "@theme": {
+    "description": "Change theme of the app"
+  },
+  "favorites": "Favorites",
+  "@favorites": {
+    "description": "Change your favorites"
+  },
+  "location": "Location",
+  "@location": {
+    "description": "Change your location"
+  },
+  "privacy": "Privacy",
+  "@privacy": {
+    "description": "Allow or Forbid any permissions"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "The settings of notifications"
+  },
+  "widgetcustomization": "Widget Customization",
+  "@widgetcustomization": {
+    "description": "The customization of widgets"
+  },
+  "lng": "EN",
+  "@lng": {
+    "description": "The shortened name of language currently used"
+  }
+}
