@@ -1,0 +1,116 @@
+{
+  "timesettings": "Time and Settings",
+  "@timesettings": {
+    "description": "The title of the page"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "The settings"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Goes to the profile page"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Change current language"
+  },
+  "theme": "Theme",
+  "@theme": {
+    "description": "Change theme of the app"
+  },
+  "favorites": "Favorites",
+  "@favorites": {
+    "description": "Change your favorites"
+  },
+  "location": "Location",
+  "@location": {
+    "description": "Change your location"
+  },
+  "privacy": "Privacy",
+  "@privacy": {
+    "description": "Allow or Forbid any permissions"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "The settings of notifications"
+  },
+  "widgetcustomization": "Widget Customization",
+  "@widgetcustomization": {
+    "description": "The customization of widgets"
+  },
+  "lng": "EN",
+  "@lng": {
+    "description": "The shortened name of language currently used"
+  },
+  "warnings": "Current Warnings",
+  "@warnings": {
+    "description" : "The display of current warnings on the road"
+  },
+  "montrealtraffic": "Montreal Traffic",
+  "@montrealtraffic": {
+    "description" : "The part of the page that shows current traffic warnings and state of the road"
+  },
+  "statetraffic": "Traffic Status",
+  "@stateoftraffic": {
+    "description" : "The part of the page that shows the states of traffic in routes"
+  },
+  "todo": "To-Do",
+  "@todo": {
+    "description": "The page to put your to do list"
+  },
+  "iwill": "I will...",
+  "@iwill": {
+    "description": "I will part"
+  },
+  "addtodo": "Add a To-Do",
+  "@addtodo": {
+    "description": "Add a new reminder"
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Title"
+  },
+  "content": "Contenu",
+  "@content": {
+    "description": "content of the to-do"
+  },
+  "timedatebeginend": "Date of Start and End",
+  "@timedatebeginend": {
+    "description": "when the to-do starts and ends"
+  },
+  "status": "Status",
+  "@status": {
+    "description": "status of the to-do"
+  },
+  "create": "Create",
+  "@create": {
+    "description": "Creation of the to-do"
+  },
+  "welcome": "Welcome",
+  "@welcome": {
+    "description": "welcome the user"
+  },
+  "weather": "Weather",
+  "@weather": {
+    "description": "Goes to the weather app"
+  },
+  "time": "Time",
+  "@time": {
+    "description": "Shows the time"
+  },
+  "pickimage": "Pick Image",
+  "@pickimage": {
+    "description": "pick an image"
+  },
+  "camera": "Camera",
+  "@camera": {
+    "description": "camera"
+  },
+  "gallery": "Gallery",
+  "@gallery": {
+    "description": "gallery"
+  }
+
+
+}

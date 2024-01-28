@@ -16,7 +16,6 @@ class _ProfilePageState extends State<ProfilePage> {
   ImageCropper imageCropper = ImageCropper();
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.red[400],title: Text("Profile"),

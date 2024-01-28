@@ -3,6 +3,7 @@ import 'package:project1/ui/pages/to_do/to_do.class.dart';
 import 'package:project1/ui/pages/to_do/to_do_group.class.dart';
 import 'package:project1/ui/pages/to_do/to_do_group_template.widget.dart';
 import 'package:project1/ui/pages/to_do/to_do_template.widget.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() => runApp(MaterialApp(
   home: ToDoPage(),
@@ -57,7 +58,7 @@ class _ToDoPageState extends State<ToDoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('To-Do'),
+        title: Text(AppLocalizations.of(context)!.todo),
         centerTitle: true,
         backgroundColor: Colors.red[400],
       ),
@@ -74,7 +75,7 @@ class _ToDoPageState extends State<ToDoPage> {
               builder: (BuildContext context) {
                 return AlertDialog(
                   scrollable: true,
-                  title: Text('Ajouter un To-Do'),
+                  title: Text(AppLocalizations.of(context)!.addtodo),
                   content: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Form(
@@ -82,7 +83,7 @@ class _ToDoPageState extends State<ToDoPage> {
                         children: <Widget>[
                           TextFormField(
                             decoration: InputDecoration(
-                              labelText: 'Titre',
+                              labelText: AppLocalizations.of(context)!.title,
                               icon: Icon(Icons.title),
                             ),
                             maxLength: 25,
@@ -96,7 +97,7 @@ class _ToDoPageState extends State<ToDoPage> {
                           ),
                           TextFormField(
                             decoration: InputDecoration(
-                              labelText: 'Contenu',
+                              labelText: AppLocalizations.of(context)!.content,
                               icon: Icon(Icons.message_rounded),
                             ),
                             controller: contenuController,
@@ -109,7 +110,7 @@ class _ToDoPageState extends State<ToDoPage> {
                           ),
                           TextFormField(
                             decoration: InputDecoration(
-                              labelText: 'Temps de debut et de fin',
+                              labelText: AppLocalizations.of(context)!.timedatebeginend,
                               icon: Icon(Icons.date_range_outlined),
                             ),
                             controller: dateController,
@@ -122,7 +123,7 @@ class _ToDoPageState extends State<ToDoPage> {
                           ),
                           TextFormField(
                               decoration: InputDecoration(
-                                labelText: 'Status',
+                                labelText: AppLocalizations.of(context)!.status,
                                 icon: Icon(Icons.circle_outlined),
                               ),
                               controller: statusController,
@@ -139,7 +140,7 @@ class _ToDoPageState extends State<ToDoPage> {
                   ),
                   actions: [
                     ElevatedButton(
-                        child: Text("Créer"),
+                        child: Text(AppLocalizations.of(context)!.create),
                         onPressed: () {
                           setState(() {
                             ToDo temp = ToDo(titre: titreController.text, contenu: contenuController.text,toDoTemps: dateController.text,statut: statusController.text);
