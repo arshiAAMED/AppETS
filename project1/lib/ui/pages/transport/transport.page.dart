@@ -22,66 +22,76 @@ class _TransportPageState extends State<TransportPage> {
         child: Column(
           children: [
             SizedBox(height: 40),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey,
-                    blurRadius: 10,
-                  ),
-                ],
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center, // Center the content horizontally
-                  children: <Widget>[
-                    const SizedBox(height: 8),
-                    const Text('STM'),
-                    SizedBox(width: 300),
-                    Icon(Icons.directions_bus_filled_rounded),
-                    IconButton(
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => STM()));
-                        }, 
-                        icon: const Icon(Icons.arrow_forward_ios_outlined)),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 10,
+                    ),
                   ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 16.0, top: 16.0, bottom: 16.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween, // Center the content horizontally
+                    children: <Widget>[
+                      const Text('STM'),
+                      Row(
+                        children: [
+                          Icon(Icons.directions_bus_filled_rounded),
+                          IconButton(
+                              onPressed: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) => BIXI()));
+                              },
+                              icon: const Icon(Icons.arrow_forward_ios_outlined)),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
             SizedBox(height: 10),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey,
-                    blurRadius: 10,
-                  ),
-                ],
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center, // Center the content horizontally
-                  children: <Widget>[
-                    const SizedBox(height: 8),
-                    const Text('BIXI'),
-                    SizedBox(width: 300),
-                    Icon(Icons.directions_bike_rounded),
-                    IconButton(
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => BIXI()));
-                        },
-                        icon: const Icon(Icons.arrow_forward_ios_outlined)),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 10,
+                    ),
                   ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 16.0, top: 16.0, bottom: 16.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween, // Center the content horizontally
+                    children: <Widget>[
+                      const Text('BIXI'),
+                      Row(
+                        children: [
+                          Icon(Icons.directions_bike_rounded),
+                          IconButton(
+                              onPressed: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) => BIXI()));
+                              },
+                              icon: const Icon(Icons.arrow_forward_ios_outlined)),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
