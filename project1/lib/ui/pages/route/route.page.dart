@@ -37,8 +37,8 @@ class _RoutePageState extends State<RoutePage>{
         centerTitle: true,
       ),
       //body: Center(
-      body: CustomScrollView(
-        slivers: [
+      body: Column(
+        children: [
           Column(
             children: [
               Text(AppLocalizations.of(context)!.warnings, style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold), )
@@ -46,7 +46,7 @@ class _RoutePageState extends State<RoutePage>{
           ),
           Center(
             child: Container(
-              height: 610,
+              height: 305,
               child: ListView(
                 children: avertissements.map((avertissement) => AvertissementCard(avertissement : avertissement)).toList()
               ),
@@ -62,9 +62,8 @@ class _RoutePageState extends State<RoutePage>{
             ),
           Center(
             child: Container(
-              height: 5,
-              child: SliverList(
-                delegate: null,
+              height: 305,
+              child: ListView(
                 children: reseaus.map((reseau) => ReseauCard(reseau: reseau)).toList(),
               ),
             ),
