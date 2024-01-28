@@ -7,6 +7,7 @@ import 'package:project1/ui/pages/profile/profile.page.dart';
 import 'package:project1/ui/pages/route/route.page.dart';
 import 'package:project1/ui/pages/temps/temps.page.dart';
 import 'package:project1/ui/pages/to_do/to_do.page.dart';
+import 'package:project1/ui/pages/transport/mapScreen.dart';
 import 'package:project1/ui/pages/transport/transport.page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -25,7 +26,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-
         '/': (context) => HomePage(),
         '/meteo' : (context) => MeteoPage(),
         '/parametre' : (context) => ParametrePage(),
