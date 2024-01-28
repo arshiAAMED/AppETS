@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project1/ui/pages/transport/HoraireSTM/detailsHoraire.dart';
 
 class horaireSTMtemplate extends StatelessWidget {
   final String numeroBus;
@@ -75,7 +76,11 @@ class horaireSTMtemplate extends StatelessWidget {
                       ),
                     ),
                   ),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios_outlined)),
+                  IconButton(onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => DetailsHoraire()));
+                  },
+                      icon: Icon(Icons.arrow_forward_ios_outlined)),
                 ],
               ),
             ],
