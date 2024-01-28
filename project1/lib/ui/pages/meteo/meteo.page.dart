@@ -68,6 +68,7 @@ class _MeteoPageState extends State<MeteoPage> {
   }
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: Colors.white,
         appBar: AppBar(backgroundColor: Colors.red[400],title: Text(widget.city?? 'Montréal'),),
@@ -91,6 +92,7 @@ class _MeteoPageState extends State<MeteoPage> {
 
               ],
             )
+
     );
   }
 }
