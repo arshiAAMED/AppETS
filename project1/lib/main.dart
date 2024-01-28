@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project1/ui/pages/home/home.page.dart';
 import 'package:project1/ui/pages/meteo/meteo.page.dart';
 import 'package:project1/ui/pages/parametre/parameter.page.dart';
 import 'package:project1/ui/pages/profile/profile.page.dart';
@@ -19,8 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => ToDoPage(),
-        //'/' : (context) => HomePage(),
+        '/' : (context) => HomePage(),
         '/meteo' : (context) => MeteoPage(),
         '/parametre' : (context) => ParametrePage(),
         '/profile' : (context) => ProfilePage(),
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         '/transport' : (context) => TransportPage(),
 
       },
-      initialRoute: '/meteo',
+      initialRoute: '/',
     );
   }
 }
