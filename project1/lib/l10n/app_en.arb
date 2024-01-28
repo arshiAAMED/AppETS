@@ -42,5 +42,17 @@
   "lng": "EN",
   "@lng": {
     "description": "The shortened name of language currently used"
+  },
+  "warnings": "Current Warnings",
+  "@warnings": {
+    "description" : "The display of current warnings on the road"
+  },
+  "montrealtraffic": "Montreal Traffic",
+  "@montrealtraffic": {
+    "description" : "The part of the page that shows current traffic warnings and state of the road"
+  },
+  "statetraffic": "Traffic Status",
+  "@stateoftraffic": {
+    "description" : "The part of the page that shows the states of traffic in routes"
   }
 }

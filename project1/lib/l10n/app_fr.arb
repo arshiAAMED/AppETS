@@ -9,5 +9,8 @@
   "privacy": "Privacy",
   "notifications": "Notifications",
   "widgetcustomization": "Customization Widget",
-  "lng": "FR"
+  "lng": "FR",
+  "warnings": "Avertissements en Vigueur",
+  "montrealtraffic": "Circulation Montreal",
+  "statetraffic": "Etat de Reseau"
 }
