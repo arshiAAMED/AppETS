@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:project1/ui/pages/transport/BIXI.dart';
+import 'package:project1/ui/pages/transport/Disponibilit%C3%A9sBIXI/BIXI.dart';
 import 'package:project1/ui/pages/transport/HoraireSTM/STM.dart';
+import 'package:project1/ui/pages/transport/mapScreen.dart';
 
 class TransportPage extends StatefulWidget {
   const TransportPage({super.key});
@@ -40,15 +41,16 @@ class _TransportPageState extends State<TransportPage> {
                   mainAxisAlignment: MainAxisAlignment.center, // Center the content horizontally
                   children: <Widget>[
                     const SizedBox(height: 8),
-                    const Text('STM'),
+                    const Text('Horaire STM'),
                     SizedBox(width: 300),
                     Icon(Icons.directions_bus_filled_rounded),
                     IconButton(
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => PageSTM()));
-                        }, 
-                        icon: const Icon(Icons.arrow_forward_ios_outlined)),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => PageSTM()));
+                      },
+                      icon: const Icon(Icons.arrow_forward_ios_outlined),
+                    ),
                   ],
                 ),
               ),
@@ -72,15 +74,16 @@ class _TransportPageState extends State<TransportPage> {
                   mainAxisAlignment: MainAxisAlignment.center, // Center the content horizontally
                   children: <Widget>[
                     const SizedBox(height: 8),
-                    const Text('BIXI'),
+                    const Text('Horaire BIXI'),
                     SizedBox(width: 300),
                     Icon(Icons.directions_bike_rounded),
                     IconButton(
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => BIXI()));
-                        },
-                        icon: const Icon(Icons.arrow_forward_ios_outlined)),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => BIXI()));
+                      },
+                      icon: const Icon(Icons.arrow_forward_ios_outlined),
+                    ),
                   ],
                 ),
               ),
@@ -88,6 +91,15 @@ class _TransportPageState extends State<TransportPage> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => MapScreen()));
+        },
+        child: Icon(Icons.map, color: Colors.red.shade400),
+        backgroundColor: Colors.red.shade50,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }
