@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project1/ui/pages/transport/BIXI.dart';
-import 'package:project1/ui/pages/transport/STM.dart';
+import 'package:project1/ui/pages/transport/HoraireSTM/STM.dart';
 
 class TransportPage extends StatefulWidget {
   const TransportPage({super.key});
@@ -46,7 +46,7 @@ class _TransportPageState extends State<TransportPage> {
                     IconButton(
                         onPressed: () {
                           Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => STM()));
+                              MaterialPageRoute(builder: (context) => PageSTM()));
                         }, 
                         icon: const Icon(Icons.arrow_forward_ios_outlined)),
                   ],
