@@ -42,7 +42,7 @@ class _TransportPageState extends State<TransportPage> {
                   children: <Widget>[
                     const SizedBox(height: 8),
                     const Text('Horaire STM'),
-                    SizedBox(width: 300),
+                    SizedBox(width: 200),
                     Icon(Icons.directions_bus_filled_rounded),
                     IconButton(
                       onPressed: () {
@@ -75,7 +75,7 @@ class _TransportPageState extends State<TransportPage> {
                   children: <Widget>[
                     const SizedBox(height: 8),
                     const Text('Horaire BIXI'),
-                    SizedBox(width: 300),
+                    SizedBox(width: 200),
                     Icon(Icons.directions_bike_rounded),
                     IconButton(
                       onPressed: () {
