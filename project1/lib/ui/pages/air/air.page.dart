@@ -85,10 +85,11 @@ class _AirPageState extends State<AirPage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.cyan[50],
       appBar: AppBar(
         title: Text("Qualité de l'air"),
         centerTitle: true,
-        backgroundColor: Colors.red[400],
+        backgroundColor: Colors.orangeAccent[200],
       ),
       body: ListView(
         children: <Widget>[
@@ -148,7 +149,8 @@ class _AirPageState extends State<AirPage> {
                                   Card(
                                     shape: RoundedRectangleBorder(
                                       side: BorderSide(
-                                        color: Colors.red.shade200,
+                                        width: 2,
+                                        color: Colors.green.shade900,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),

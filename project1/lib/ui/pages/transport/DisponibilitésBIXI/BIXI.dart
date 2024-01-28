@@ -28,7 +28,7 @@ class _PageBIXIState extends State<BIXI> {
       appBar: AppBar(
         title: Text('Disponibilités BIXI'),
         centerTitle: true,
-        backgroundColor: Colors.red[400],
+        backgroundColor: Colors.orangeAccent[200],
       ),
       body: ListView(
         children: lstBIXI.map((dispoBIXIItem) => dispoBIXItemplate(

@@ -39,7 +39,7 @@ class _PageSTMState extends State<PageSTM> {
       appBar: AppBar(
         title: Text('Horaire STM'),
         centerTitle: true,
-        backgroundColor: Colors.red[400],
+        backgroundColor: Colors.orangeAccent[200],
       ),
       body: ListView(
         children: horaireGroup.map((HoraireSTMChunk) => HoraireSTMgroupeTemplate(

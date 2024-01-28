@@ -39,11 +39,11 @@ class horaireSTMtemplate extends StatelessWidget {
                     numeroBus,
                     style: TextStyle(
                       fontSize: 18.0,
-                      color: Colors.red.shade300,
+                      color: Colors.orangeAccent.shade200,
                     ),
                   ),
                   SizedBox(width: 8.0),
-                  Icon(Icons.directions_bus_filled_rounded, color: Colors.red.shade400),
+                  Icon(Icons.directions_bus_filled_rounded, color: Colors.grey.shade600),
                 ],
               ),
               SizedBox(height: 6.0),
@@ -72,7 +72,7 @@ class horaireSTMtemplate extends StatelessWidget {
                       minutes,
                       style: TextStyle(
                         fontSize: 18.0,
-                        color: Colors.red.shade300,
+                        color: Colors.orange.shade600,
                       ),
                     ),
                   ),

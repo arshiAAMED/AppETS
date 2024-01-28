@@ -15,9 +15,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: Colors.cyan[50],
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.red[400],
+        backgroundColor: Colors.orangeAccent[200],
         title: Text(AppLocalizations.of(context)!.welcome),
         centerTitle: true,
       ),
@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(15),
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.red.shade400,
+                        color: Colors.greenAccent.shade200,
                         offset: Offset(1.0,19.0),
                         //blurRadius: 10,
                         spreadRadius: 2.0
@@ -71,6 +71,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             CardWidget(text: "Transport",path: '/transport',img: 'bus.png'),
+            CardWidget(text: "Routes",path: '/route',img: 'bus.png'),
             CardWidget(text: "TO-DO",path: '/to_do',img: 'checklist.png'),
             Row(
               children: [

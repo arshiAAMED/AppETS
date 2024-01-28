@@ -32,7 +32,7 @@ class _RoutePageState extends State<RoutePage>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red.shade400,
+        backgroundColor: Colors.orangeAccent[200],
         title:  Text(AppLocalizations.of(context)!.montrealtraffic),
         centerTitle: true,
       ),
@@ -46,7 +46,7 @@ class _RoutePageState extends State<RoutePage>{
           ),
           Center(
             child: Container(
-              height: 305,
+              height: 250,
               child: ListView(
                 children: avertissements.map((avertissement) => AvertissementCard(avertissement : avertissement)).toList()
               ),

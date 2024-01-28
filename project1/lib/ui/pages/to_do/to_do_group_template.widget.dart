@@ -17,8 +17,8 @@ class _ToDoGroupTemplateState extends State<ToDoGroupTemplate> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shadowColor: Colors.red[400],
-      color: Colors.red[50],
+      shadowColor: Colors.black,
+      color: Colors.greenAccent[100],
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
       child: Padding(
         padding: const EdgeInsets.all(12.0),

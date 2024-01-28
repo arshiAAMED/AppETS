@@ -25,6 +25,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+
+      ),
       routes: {
         '/': (context) => HomePage(),
         '/meteo' : (context) => MeteoPage(),

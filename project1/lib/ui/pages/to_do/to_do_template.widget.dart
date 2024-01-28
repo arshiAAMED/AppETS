@@ -34,7 +34,7 @@ class _ToDoTemplateState extends State<ToDoTemplate> {
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
       shape: RoundedRectangleBorder(
         side: BorderSide(
-          color: Colors.red.shade400,
+          color: Colors.greenAccent.shade700,
         ),
         borderRadius: BorderRadius.circular(12.0),
       ),
@@ -93,7 +93,7 @@ class _ToDoTemplateState extends State<ToDoTemplate> {
                   onPressed: widget.delete,
                   icon: Icon(Icons.delete),
                   style: ButtonStyle(
-                    iconColor: MaterialStateProperty.all<Color>(Colors.red),
+                    iconColor: MaterialStateProperty.all<Color>(Colors.black),
                     iconSize: MaterialStateProperty.all(14.0),
                   ),
                   label: Text(''),

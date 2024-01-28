@@ -13,8 +13,8 @@ class CardWidget extends StatefulWidget {
 class _CardWidgetState extends State<CardWidget> {
   LinearGradient cardColor = LinearGradient(
       colors: [
-        Colors.red,
-        Colors.orange.shade200
+        Colors.greenAccent.shade200,
+        Colors.lightGreen.shade200
       ]
   );
   @override
@@ -26,7 +26,7 @@ class _CardWidgetState extends State<CardWidget> {
           cardColor = LinearGradient(
               colors: [
                 Colors.white,
-                Colors.red.shade300
+                Colors.greenAccent.shade200
               ]
           );
 
@@ -40,8 +40,8 @@ class _CardWidgetState extends State<CardWidget> {
         setState(() {
           cardColor = LinearGradient(
               colors: [
-                Colors.red,
-                Colors.orange.shade200
+                Colors.greenAccent.shade200,
+                Colors.lightGreen.shade200
               ]
           ); // Remplacez par votre couleur par défaut
         });

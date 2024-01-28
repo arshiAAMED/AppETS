@@ -15,8 +15,9 @@ class _TempsPageState extends State<TempsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.cyan[50],
       appBar: AppBar(
-        backgroundColor: Colors.red.shade400,
+        backgroundColor: Colors.orangeAccent[200],
         title:  Text(AppLocalizations.of(context)!.timesettings, style: TextStyle(fontSize: 35),),
         centerTitle: true,
       ) ,
@@ -32,7 +33,7 @@ class _TempsPageState extends State<TempsPage> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                              color: Colors.red.shade400,
+                              color: Colors.blue.shade900,
                               offset: Offset(1.0,19.0),
                               //blurRadius: 10,
                               spreadRadius: 2.0
@@ -69,7 +70,7 @@ class _TempsPageState extends State<TempsPage> {
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                      backgroundColor: Colors.red.shade400,
+                                      backgroundColor: Colors.blue.shade900,
                                       shadowColor: Colors.black,
                                       side: BorderSide()
                                     ),
@@ -81,7 +82,7 @@ class _TempsPageState extends State<TempsPage> {
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.red.shade400,
+                                        backgroundColor: Colors.blue.shade900,
                                         shadowColor: Colors.black,
                                         side: BorderSide()                                    ),
                                     child:  Padding(
@@ -92,7 +93,7 @@ class _TempsPageState extends State<TempsPage> {
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.red.shade400,
+                                        backgroundColor: Colors.blue.shade900,
                                         shadowColor: Colors.black,
                                         side: BorderSide()
                                     ),
@@ -104,7 +105,7 @@ class _TempsPageState extends State<TempsPage> {
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.red.shade400,
+                                        backgroundColor: Colors.blue.shade900,
                                         shadowColor: Colors.black,
                                         side: BorderSide()                                            ),
                                     child:  Padding(
@@ -115,7 +116,7 @@ class _TempsPageState extends State<TempsPage> {
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.red.shade400,
+                                        backgroundColor: Colors.blue.shade900,
                                         shadowColor: Colors.black,
                                         side: BorderSide()                                            ),
                                     child:  Padding(
@@ -126,7 +127,7 @@ class _TempsPageState extends State<TempsPage> {
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.red.shade400,
+                                        backgroundColor: Colors.blue.shade900,
                                         shadowColor: Colors.black,
                                         side: BorderSide()                                            ),
                                     child:  Padding(
@@ -137,7 +138,7 @@ class _TempsPageState extends State<TempsPage> {
                                 ElevatedButton(onPressed: (){
                                 },
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.red.shade400,
+                                        backgroundColor: Colors.blue.shade900,
                                         shadowColor: Colors.black,
                                         side: BorderSide()                                            ),
                                     child:  Padding(
@@ -148,7 +149,7 @@ class _TempsPageState extends State<TempsPage> {
                                 ElevatedButton(onPressed: (){
                                 },
                                   style: ElevatedButton.styleFrom(
-                                      backgroundColor: Colors.red.shade400,
+                                      backgroundColor: Colors.blue.shade900,
                                       shadowColor: Colors.black,
                                       side: BorderSide()                                          ),
                                   child:  Text(AppLocalizations.of(context)!.widgetcustomization , style:  TextStyle(color: Colors.white),),

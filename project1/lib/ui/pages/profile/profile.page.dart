@@ -18,7 +18,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.red[400],title: Text("Profile"),
+          backgroundColor: Colors.orangeAccent[200],title: Text("Profile"),
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 10, bottom: 3),
@@ -64,9 +64,9 @@ class _ProfilePageState extends State<ProfilePage> {
                       child: MaterialButton(
                         shape: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(50)),
-                            borderSide: BorderSide(color: Colors.red.shade400)
+                            borderSide: BorderSide(color: Colors.blueGrey.shade600)
                         ),
-                        color: Colors.red[400],
+                        color: Colors.blueGrey[700],
                         onPressed: () {
                           _pickImage(ImageSource.camera);
                         },
@@ -86,9 +86,9 @@ class _ProfilePageState extends State<ProfilePage> {
                       child: MaterialButton(
                         shape: OutlineInputBorder(
                             borderRadius: BorderRadius.all(Radius.circular(50)),
-                            borderSide: BorderSide(color: Colors.red.shade400)
+                            borderSide: BorderSide(color: Colors.blueGrey.shade600)
                         ),
-                        color: Colors.red[400],
+                        color: Colors.blueGrey[700],
                         onPressed: () {
                           _pickImage(ImageSource.gallery);
                         },

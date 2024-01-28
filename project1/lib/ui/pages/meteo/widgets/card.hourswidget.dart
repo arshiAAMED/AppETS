@@ -15,7 +15,7 @@ class CardHoursWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(right: 10),
         child: Card(
-          color: Colors.red[50],
+          color: Colors.greenAccent[200],
           elevation: 6,
           child: Padding(
             padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),

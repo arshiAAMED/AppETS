@@ -17,7 +17,7 @@ class _TransportPageState extends State<TransportPage> {
       appBar: AppBar(
         title: Text('Transport'),
         centerTitle: true,
-        backgroundColor: Colors.red.shade400,
+        backgroundColor: Colors.orangeAccent.shade200,
       ),
       body: Center(
         child: Column(
@@ -96,8 +96,8 @@ class _TransportPageState extends State<TransportPage> {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => MapScreen()));
         },
-        child: Icon(Icons.map, color: Colors.red.shade400),
-        backgroundColor: Colors.red.shade50,
+        child: Icon(Icons.map, color: Colors.white),
+        backgroundColor: Colors.blueGrey.shade600,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );

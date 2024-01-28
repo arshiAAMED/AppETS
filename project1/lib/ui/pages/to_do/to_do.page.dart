@@ -60,7 +60,7 @@ class _ToDoPageState extends State<ToDoPage> {
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.todo),
         centerTitle: true,
-        backgroundColor: Colors.red[400],
+        backgroundColor: Colors.orangeAccent[200],
       ),
       body: ListView(
         children: toDoGroup.map((toDoChunk) => ToDoGroupTemplate(
@@ -162,7 +162,7 @@ class _ToDoPageState extends State<ToDoPage> {
           Icons.add_box_rounded,
           color: Colors.white,
         ),
-        backgroundColor: Colors.red[500],
+        backgroundColor: Colors.blueGrey[600],
       ),
     );
   }

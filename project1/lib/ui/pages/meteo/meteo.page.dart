@@ -72,7 +72,10 @@ class _MeteoPageState extends State<MeteoPage> {
 
     return Scaffold(
       backgroundColor: Colors.white,
-        appBar: AppBar(backgroundColor: Colors.red[400],title: Text(widget.city?? 'Montréal'),),
+        appBar: AppBar(
+          title: Text(widget.city?? 'Montréal'),
+          backgroundColor: Colors.orangeAccent[200]
+        ),
         body:
         (weatherData == null)?const Center(child: CircularProgressIndicator(),):
             Column(
