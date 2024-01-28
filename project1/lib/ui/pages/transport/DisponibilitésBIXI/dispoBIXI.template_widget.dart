@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:project1/ui/pages/transport/HoraireSTM/detailsHoraire.dart';
 
-class horaireSTMtemplate extends StatelessWidget {
-  final String numeroBus;
-  final String direction;
+class dispoBIXItemplate extends StatelessWidget {
   final String localisation;
-  final String minutes;
+  final String bixi;
+  final String docks;
 
-  horaireSTMtemplate({
-    required this.numeroBus,
-    required this.direction,
+  dispoBIXItemplate({
     required this.localisation,
-    required this.minutes,
+    required this.bixi,
+    required this.docks,
   });
 
   @override
@@ -36,30 +34,22 @@ class horaireSTMtemplate extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    numeroBus,
+                    localisation,
                     style: TextStyle(
                       fontSize: 18.0,
                       color: Colors.red.shade300,
                     ),
                   ),
                   SizedBox(width: 8.0),
-                  Icon(Icons.directions_bus_filled_rounded, color: Colors.red.shade400),
+                  Icon(Icons.directions_bike_rounded, color: Colors.red.shade400),
                 ],
               ),
               SizedBox(height: 6.0),
               Text(
-                direction,
+                docks,
                 style: TextStyle(
                   fontSize: 14.0,
                   color: Colors.black,
-                ),
-              ),
-              SizedBox(height: 8.0),
-              Text(
-                localisation,
-                style: TextStyle(
-                  fontSize: 9.0,
-                  color: Colors.grey[600],
                 ),
               ),
               SizedBox(height: 8.0),
@@ -69,18 +59,13 @@ class horaireSTMtemplate extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerRight,
                     child: Text(
-                      minutes,
+                      bixi,
                       style: TextStyle(
                         fontSize: 18.0,
                         color: Colors.red.shade300,
                       ),
                     ),
                   ),
-                  IconButton(onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => DetailsHoraire()));
-                  },
-                      icon: Icon(Icons.arrow_forward_ios_outlined)),
                 ],
               ),
             ],

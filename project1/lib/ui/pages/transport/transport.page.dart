@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project1/ui/pages/transport/Disponibilit%C3%A9sBIXI/BIXI.dart';
 import 'package:project1/ui/pages/transport/HoraireSTM/STM.dart';
-//import 'package:project1/ui/pages/transport/mapScreen.dart';
-
-import 'BIXI.dart';
+import 'package:project1/ui/pages/transport/mapScreen.dart';
 
 class TransportPage extends StatefulWidget {
   const TransportPage({super.key});
@@ -92,7 +91,7 @@ class _TransportPageState extends State<TransportPage> {
           ],
         ),
       ),
-      /*floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => MapScreen()));
@@ -100,7 +99,7 @@ class _TransportPageState extends State<TransportPage> {
         child: Icon(Icons.map, color: Colors.red.shade400),
         backgroundColor: Colors.red.shade50,
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,    */
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }
