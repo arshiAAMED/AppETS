@@ -12,5 +12,19 @@
   "lng": "FR",
   "warnings": "Avertissements en Vigueur",
   "montrealtraffic": "Circulation Montreal",
-  "statetraffic": "Etat de Reseau"
+  "statetraffic": "Etat de Reseau",
+  "todo": "To-Do",
+  "iwill": "Je dois...",
+  "addtodo": "Ajouter un To-Do",
+  "title": "Titre",
+  "content": "Contenu",
+  "timedatebeginend": "Temps de debut et de fin",
+  "status": "Status",
+  "create": "Creer",
+  "welcome": "Bienvenue",
+  "weather": "Meteo",
+  "time": "Temps",
+  "pickimage": "Pick Image",
+  "camera": "Camera",
+  "gallery": "Gallery"
 }

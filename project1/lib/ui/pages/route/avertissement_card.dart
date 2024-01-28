@@ -9,6 +9,7 @@ class AvertissementCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+        shadowColor: Colors.red[400],
         margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
         child: Padding(
           padding: const EdgeInsets.all(12.0),

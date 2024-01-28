@@ -54,5 +54,63 @@
   "statetraffic": "Traffic Status",
   "@stateoftraffic": {
     "description" : "The part of the page that shows the states of traffic in routes"
+  },
+  "todo": "To-Do",
+  "@todo": {
+    "description": "The page to put your to do list"
+  },
+  "iwill": "I will...",
+  "@iwill": {
+    "description": "I will part"
+  },
+  "addtodo": "Add a To-Do",
+  "@addtodo": {
+    "description": "Add a new reminder"
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Title"
+  },
+  "content": "Contenu",
+  "@content": {
+    "description": "content of the to-do"
+  },
+  "timedatebeginend": "Date of Start and End",
+  "@timedatebeginend": {
+    "description": "when the to-do starts and ends"
+  },
+  "status": "Status",
+  "@status": {
+    "description": "status of the to-do"
+  },
+  "create": "Create",
+  "@create": {
+    "description": "Creation of the to-do"
+  },
+  "welcome": "Welcome",
+  "@welcome": {
+    "description": "welcome the user"
+  },
+  "weather": "Weather",
+  "@weather": {
+    "description": "Goes to the weather app"
+  },
+  "time": "Time",
+  "@time": {
+    "description": "Shows the time"
+  },
+  "pickimage": "Pick Image",
+  "@pickimage": {
+    "description": "pick an image"
+  },
+  "camera": "Camera",
+  "@camera": {
+    "description": "camera"
+  },
+  "gallery": "Gallery",
+  "@gallery": {
+    "description": "gallery"
   }
+
+
 }
