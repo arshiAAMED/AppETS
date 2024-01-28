@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
         '/to_do' : (context) => ToDoPage(),
         '/transport' : (context) => TransportPage(),
       },
+      initialRoute: '/meteo',
     );
   }
 }
