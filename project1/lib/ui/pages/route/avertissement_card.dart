@@ -12,20 +12,18 @@ class AvertissementCard extends StatelessWidget {
         margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
         child: Padding(
           padding: const EdgeInsets.all(12.0),
-          child: Expanded(
-            child: Wrap(
-              children: <Widget>[
-                Icon(Icons.taxi_alert_sharp),
-                Text(
-                    avertissement.text,
-                    style: TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.grey[600]
-                    )
-                ),
-                const SizedBox(height: 8.0),
-              ],
-            ),
+          child: Wrap(
+            children: <Widget>[
+              Icon(Icons.taxi_alert_sharp),
+              Text(
+                  avertissement.text,
+                  style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.grey[600]
+                  )
+              ),
+              const SizedBox(height: 8.0),
+            ],
           ),
         )
     );

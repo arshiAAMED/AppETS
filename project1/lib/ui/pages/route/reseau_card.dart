@@ -13,62 +13,60 @@ class ReseauCard extends StatelessWidget {
         margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
         child: Padding(
           padding: const EdgeInsets.all(12.0),
-          child: Expanded(
-            child: Wrap(
-              children: <Widget>[
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                      'DE: ${reseau.De}',
-                      style: TextStyle(
-                          fontSize: 18.0,
-                          color: Colors.grey[600]
-                      )
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.bottomLeft,
-                  child: Text(
-                      'A: ${reseau.A}. ',
-                      style: TextStyle(
-                          fontSize: 18.0,
-                          color: Colors.grey[600]
-                      )
-                  ),
-                ),
-                Text(
-                    '${reseau.Type}: ',
+          child: Wrap(
+            children: <Widget>[
+              Align(
+                alignment: Alignment.topLeft,
+                child: Text(
+                    'DE: ${reseau.De}',
                     style: TextStyle(
                         fontSize: 18.0,
                         color: Colors.grey[600]
                     )
                 ),
-                Text(
-                    '${reseau.TypeNom}      ',
+              ),
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                    'A: ${reseau.A}. ',
                     style: TextStyle(
                         fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
                         color: Colors.grey[600]
                     )
                 ),
-                  Text(
-                      '${reseau.VisibiliteEtDirection}: ',
-                      style: TextStyle(
-                          fontSize: 18.0,
-                          color: Colors.grey[600]
-                        )
-                    ),
+              ),
+              Text(
+                  '${reseau.Type}: ',
+                  style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.grey[600]
+                  )
+              ),
+              Text(
+                  '${reseau.TypeNom}      ',
+                  style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey[600]
+                  )
+              ),
                 Text(
-                    reseau.VEDNom,
+                    '${reseau.VisibiliteEtDirection}: ',
                     style: TextStyle(
                         fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
                         color: Colors.grey[600]
                       )
-                ),
-                const SizedBox(height: 8.0),
-              ],
-            ),
+                  ),
+              Text(
+                  reseau.VEDNom,
+                  style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey[600]
+                    )
+              ),
+              const SizedBox(height: 8.0),
+            ],
           ),
         )
     );
