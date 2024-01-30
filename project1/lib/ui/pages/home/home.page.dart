@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             CardWidget(text: "Transport",path: '/transport',img: 'bus.png'),
-            CardWidget(text: "Routes",path: '/route',img: 'bus.png'),
+            CardWidget(text: "Routes",path: '/route',img: 'route.png'),
             CardWidget(text: "TO-DO",path: '/to_do',img: 'checklist.png'),
             Row(
               children: [

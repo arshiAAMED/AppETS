@@ -37,38 +37,41 @@ class _RoutePageState extends State<RoutePage>{
         centerTitle: true,
       ),
       //body: Center(
-      body: Column(
-        children: [
-          Column(
-            children: [
-              Text(AppLocalizations.of(context)!.warnings, style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold), )
-            ],
-          ),
-          Center(
-            child: Container(
-              height: 250,
-              child: ListView(
-                children: avertissements.map((avertissement) => AvertissementCard(avertissement : avertissement)).toList()
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Column(
+              children: [
+                Text(AppLocalizations.of(context)!.warnings, style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold), )
+              ],
+            ),
+            Center(
+              child: Container(
+                height: 250,
+                child: ListView(
+                  children: avertissements.map((avertissement) => AvertissementCard(avertissement : avertissement)).toList()
+                ),
               ),
             ),
-          ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-                child: Column(
-                  children: [
-                    Text(AppLocalizations.of(context)!.statetraffic, style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold), )
-                  ],
-            ),
-            ),
-          Center(
-            child: Container(
-              height: 305,
-              child: ListView(
-                children: reseaus.map((reseau) => ReseauCard(reseau: reseau)).toList(),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      Text(AppLocalizations.of(context)!.statetraffic, style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold), )
+                    ],
+              ),
+              ),
+            Center(
+              child: Container(
+                padding: EdgeInsets.only(bottom: 30),
+                height: 305,
+                child: ListView(
+                  children: reseaus.map((reseau) => ReseauCard(reseau: reseau)).toList(),
+                ),
               ),
             ),
-          )
-        ],
+          ],
+        ),
       ),
     );
   }

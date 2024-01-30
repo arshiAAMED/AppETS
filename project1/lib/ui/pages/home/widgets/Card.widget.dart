@@ -64,7 +64,7 @@ class _CardWidgetState extends State<CardWidget> {
                 children: <Widget>[
                   Image.asset(
                       "images/"+'${widget.img}',
-                    scale: 7,
+                    scale: 9,
                   ),
                   SizedBox(height:5.0),
                   Text(

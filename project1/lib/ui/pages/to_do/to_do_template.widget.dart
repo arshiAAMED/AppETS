@@ -51,11 +51,13 @@ class _ToDoTemplateState extends State<ToDoTemplate> {
                   toDo: widget.todo,
                 ),
                 SizedBox(width:4.0),
-                Text(
-                  widget.toDoTitre,
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    color: Colors.black,
+                Expanded(
+                  child: Text(
+                    widget.toDoTitre,
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ],

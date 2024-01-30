@@ -78,23 +78,25 @@ class _MeteoPageState extends State<MeteoPage> {
         ),
         body:
         (weatherData == null)?const Center(child: CircularProgressIndicator(),):
-            Column(
-              children: [
-                 Padding(
-                   padding: const EdgeInsets.only(left: 20, top: 50),
-                   child: Column(
-                     children: [
-                       TopTemperatureWidget(city: "${widget.city?? 'Montréal'}", feelsLike: feelsLike, temperature: temperature,
-                         image: image,tempMax: tempMax,tempMin: tempMin,typeTemp: typeTemp,
-
-                       ),
-                       SizedBox(height: 50,),
-                       CardHoursWidget(tempMin: tempMin,weatherData: weatherData,typeTemp: typeTemp,)
-                     ],
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                   Padding(
+                     padding: const EdgeInsets.only(left: 20, top: 50),
+                     child: Column(
+                       children: [
+                         TopTemperatureWidget(city: "${widget.city?? 'Montréal'}", feelsLike: feelsLike, temperature: temperature,
+                           image: image,tempMax: tempMax,tempMin: tempMin,typeTemp: typeTemp,
+              
+                         ),
+                         CardHoursWidget(tempMin: tempMin,weatherData: weatherData,typeTemp: typeTemp,),
+                         SizedBox(height: 50,)
+                       ],
+                     ),
                    ),
-                 ),
-
-              ],
+              
+                ],
+              ),
             )
 
     );
